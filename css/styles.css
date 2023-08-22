@@ -72,6 +72,18 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* Header
 *************** */
 
@@ -92,7 +104,6 @@ body {
 }
 .menu {
   display: flex;
-
   gap: 40px;
 }
 .logo {
@@ -125,8 +136,6 @@ body {
 }
 .contacts-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -153,7 +162,6 @@ body {
   margin-left: auto;
   color: var(--background-color);
   font-size: 56px;
-  font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -206,7 +214,7 @@ body {
 /* Section 4
 Team */
 .team {
-  background-color: #f4f4fd;
+  background-color: var(--light-color);
 }
 .team-list {
   display: flex;
@@ -257,6 +265,7 @@ Team */
 .btn:focus {
   color: var(--background-color);
   background-color: var(--pressed-color);
+  border: 1px solid transparent;
 }
 .portfolio-cards {
   display: flex;
