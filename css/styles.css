@@ -100,13 +100,13 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  gap: 76px;
 }
 .menu {
   display: flex;
   gap: 40px;
 }
 .logo {
+  margin-right: 76px;
   color: var(--brand-color);
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -120,6 +120,7 @@ body {
   color: var(--secondary-color);
 }
 .menu-link {
+  padding: 24px 0;
   color: var(--secondary-color);
   font-size: 16px;
   font-style: normal;
@@ -230,7 +231,7 @@ Team */
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .team-content-wrapper {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 .team-member-img {
